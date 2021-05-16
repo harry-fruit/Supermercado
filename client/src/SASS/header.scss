@@ -1,0 +1,15 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 100%;
+    height: 12vh;
+
+    background-color: #4E203A;
+
+    h1{
+        align-self: center;
+        color: whitesmoke;
+    }
+}

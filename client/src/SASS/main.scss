@@ -1,0 +1,139 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-height: 80vh;
+    max-height: 100%;
+
+    background-color: #A1778E;
+
+    h1{
+
+        color: whitesmoke;
+        padding: 1vh 4vw 2vh;
+        margin: 4vh 0;
+        background-color: #4E203A;
+
+        border-bottom: 3px solid white;
+        border-right: 3px solid white;
+        border-bottom-right-radius: 20px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5vh;
+
+        width: 100%;
+        margin-bottom: 10vh;
+
+        .produto{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2vh;
+
+            width: 80vw;
+            padding: 2vh 0;
+            min-height: 80vw;
+            border: 2px solid black;
+            background-color: #e7bcd4;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+            img{
+                width: 40%;
+                transition: 0.5s all;
+                cursor: pointer;
+            }
+
+            img:hover{
+                transform: scale(1.1);
+            }
+
+            figcaption{
+                width: 80%;
+                font-size: 4vh;
+                font-weight: bold;
+                text-align: center;
+
+                color: #CE6A85;
+            }
+
+            p{
+                font-weight: bold;
+                color:#FF8C61;
+            }
+        }
+    }
+
+
+}
+
+@media (min-width:800px){
+    main{
+
+        .container{
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .produto{
+                width: 44vw;
+                padding: 0;
+                min-height: 60vh;
+
+                img{
+                    width: auto;
+                    max-width: 100%;
+                    height: 20vh;
+                }
+
+                figcaption{
+                    font-size: 3vh;
+                }
+                p{
+                    font-size: 2.2vh;
+                    
+                }
+
+
+            }
+        }
+
+    }
+}
+
+
+
+@media (min-width:1200px){
+    main{
+
+        .container{
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .produto{
+                width: 22vw;
+                padding: 0;
+                min-height: 60vh;
+
+                img{
+                    width: auto;
+                    max-width: 90%;
+                    height: 30vh;
+                }
+
+                figcaption{
+                    font-size: 3vh;
+                }
+
+
+            }
+        }
+
+    }
+}

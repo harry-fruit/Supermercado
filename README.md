@@ -1,2 +1,0 @@
-# Supermercado
-Projeto Alcides

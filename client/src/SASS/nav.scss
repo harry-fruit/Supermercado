@@ -1,0 +1,31 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2vh 0;
+    gap: 2vw;
+    background-color: #81536D;
+
+    a{
+        font-size: 1em;
+        text-decoration: none;
+        color: whitesmoke;
+        font-weight: 550;
+        transition: all 0.3s;
+    }
+
+    a:hover{
+        color: #4E203A;
+    }
+}
+
+@media(min-width:600px){
+    nav{
+
+        a{
+            font-size: 1.8em;
+        }
+
+    }
+}

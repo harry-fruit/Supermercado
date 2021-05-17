@@ -8,11 +8,28 @@ export class Home extends Component{
                 <h1>Home</h1>
                 <section className="container">
                     <section className="alunos">
-                        <h2>DESENVOLVEDORES</h2>    
-                        <p> Isaque Duarte Moreira RGM:26416026</p>
-                        <p> Guilherme Fernandes Pittner RGM:26167662</p>
-                        <p> Marcos Augusto Quiuqui Machado Queiroz RGM:22539409</p>
-                        <p> Thabata Amanda Gomide RGM:22539409 </p>
+                        <h2>DESENVOLVEDORES</h2>
+
+                        <div className="student">
+                            <p> Isaque Duarte Moreira </p>
+                            <p> RGM:26416026</p>
+                        </div> 
+
+                        <div className="student">
+                            <p>Guilherme Fernandes Pittner</p>
+                            <p>RGM:26167662</p>
+                        </div>
+
+                        <div className="student">
+                            <p>Marcos Augusto Quiuqui Machado Queiroz</p>
+                            <p>RGM:22539409</p>
+                        </div>
+
+                        <div className="student">
+                            <p>Thabata Amanda Gomide</p>
+                            <p>RGM:22539409</p>
+                        </div>
+
                     </section>
                 </section>
             </>

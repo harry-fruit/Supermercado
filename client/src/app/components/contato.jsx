@@ -7,24 +7,19 @@ export class Contato extends Component{
             <>  
                <h1>Contato</h1>
                <section className="container">
-                  <section className="contato">  
-                    <h2>Esta com alguma Dúvida? Preencha o formulário para entrar em contato. </h2>
-                        <label>
-        
+
+                    <section className="contato">  
+                        <h2>Esta com alguma Dúvida? Preencha o formulário para entrar em contato. </h2>
+                    
+                        <div className="inputs">
                             <input type="text" placeholder="Nome"/>
-
                             <input type="text" placeholder="Email" />
-                    
-                    
-                        </label>
-                        <label>
-        
-                            <textarea rows="4" cols="50"  placeholder="Digite sua Dúvida"></textarea>
+                        </div>
 
-                    
-                        </label>
-                <button>Enviar</button>
-                  </section>
+                        <textarea placeholder="Digite sua Dúvida" maxLength="50"></textarea>
+
+                        <button>Enviar</button>
+                    </section>
                 </section>
             </>
          

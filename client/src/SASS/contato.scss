@@ -8,15 +8,6 @@ main{
 
     background-color: #A1778E;
     .container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 5vh;
-
-        width: 100%;
-        margin-bottom: 10vh;
-
         .contato{
             display: flex;
             flex-direction: column;
@@ -26,30 +17,58 @@ main{
 
             width: 80vw;
             padding: 4vh 0;
-            min-height: 80vw;
+            height: 60vh;
             border: 2px solid black;
             background-color: #e7bcd4;
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
+            
+            h2{
+                text-align: center;
+                font-size: 2.5vh;
+            }
+
+            .inputs{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                
+                width: 90%;
 
                 input{
-                    margin: 15px;
+                    width: 48%;
+                    padding: 7px;
+                    font-size: 1.5em;
                 }
-                h2{
-                    text-align: center;
-                    font-size: 2.5vh;
-                }
+            }
+            
+            textarea{
+                width: 90%;
+                padding: 7px;
+                height: 25vh;
+                font-size: 1.5em;
+                resize: none;
+            }
 
                 button{
                     color: whitesmoke;
+                    width: 90%;
                     padding: 1vh 4vw 2vh;
-                    margin: 4vh 0;
                     background-color: #4E203A;
                     font-size: 4vh;
-            
-                    border: 3px solid white;
-                    border-radius: 20px;
+                    cursor: pointer;
+                    border: none;
+                    border-radius: 10px;
                 }
+
+                button:active{
+
+                    border-bottom: 2px solid black;
+                    border-right:2px solid black;
+
+                }
+
              }    
          }
 }
@@ -67,5 +86,23 @@ main{
             }
         }
     }
+}
+
+@media (min-width: 1300px){
+
+    main{
+
+        .container{
+
+            .contato{
+                width: 50vw;
+                .inputs{}
+
+            }
+            
+        }
+
+    }
+
 }
 

@@ -31,12 +31,30 @@ main{
             background-color: #e7bcd4;
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
-                h2{
-                    font-size: 5vh;
-                }
+            
+            
+            h2{
+                font-size: 6vw;
+                text-decoration: underline;
+            }
+
+            .student{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                width: 100%;
+
                 p{
                     font-size: 4vh;
+                    text-align: center;
                 }
+
+                p:nth-child(odd){
+                    font-weight: bold;
+                }
+
+            }
             }
         }
     }
@@ -48,10 +66,18 @@ main{
             flex-wrap: wrap;
 
             .alunos{
-                width: 44vw;
+                width: 80%;
                 padding: 0;
                 min-height: 60vh;
-             }
+
+                .student{
+                    p{
+                        font-size: 3vw;
+                    }
+                }
+
+            }
         }
     }
 }
+

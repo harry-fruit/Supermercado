@@ -29,6 +29,10 @@ export class Home extends Component{
                             <p>Thabata Amanda Gomide</p>
                             <p>RGM:22539409</p>
                         </div>
+                        <div className="student">
+                            <p>Bruna Ferreira Prudencio</p>
+                            <p>RGM:27375633</p>
+                        </div>
 
                     </section>
                 </section>
